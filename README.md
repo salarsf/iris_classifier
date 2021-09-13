@@ -2,7 +2,7 @@
 Iris flower classifier
 
 
-This is a sample application for classifying iris flower based on it's sepal's and petal's lenght and width.
+This is a sample application for classifying iris flower based on it's sepal's and petal's length and width.
 
 The data required for creating a classifier is gathered in iris.csv file
 
