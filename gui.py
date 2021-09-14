@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 
 from iris_classifier import IrisFlower
 
@@ -43,7 +44,7 @@ def submit():
     petal_wid_float = float(petal_wid.get())
 
     new_flower = IrisFlower(sepal_len_float, sepal_wid_float, petal_len_float, petal_wid_float)
-    print(new_flower.iris_type)
+    messagebox.showinfo(f"{new_flower.iris_type}", f"The type of Iris flower you entered is:\n\n {new_flower.iris_type.upper()}")
 
 submit_button = Button(root, text="Submit", command=submit)
 submit_button.grid(row=5, column=0, columnspan=2)
